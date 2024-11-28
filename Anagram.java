@@ -50,11 +50,11 @@ public class Anagram {
 		return false;
 		}else {
 			int j = 0;
-			while(str2n.length() > 0 && j < str2n.length()) {
+			while(str2n.length() > 0 && j < str2.length()) {
 				if (str2n.indexOf(str1n.charAt(j)) == -1) {
 					return false ;
 				} else {
-					str2n = str2n.substring(0, j) + str2n.substring(j + 1);
+					str2 = str2.substring(0, j) + str2n.substring(j + 1);
 
 				} j++;
 			}
