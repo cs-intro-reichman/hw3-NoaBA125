@@ -63,7 +63,7 @@ public class LoanCalc {
 		iterationCounter = 0;
 		double g = (loan2 + pay)/2;
 		while ((loan2 - pay) > epsilon) {
-			if (endBalance(loan, rate, n, pay) * endBalance(loan, rate, n, loan2) > 0) {
+			if (endBalance(loan, rate, n, g) * endBalance(loan, rate, n, pay) > 0) {
 				pay = g;
 				g = (loan2 + pay)/2;
 			} else {
