@@ -29,7 +29,7 @@ public class LoanCalc {
 	// interest rate (as a percentage), the number of periods (n), and the periodical payment.
 	private static double endBalance(double loan, double rate, int n, double payment) {	
 		double loan1 = loan ;
-		rate = (rate/100 +1);
+		rate = (rate/100) +1;
 		for (int i = 0; i < n; i++) {
 			loan1 = ((loan1 - payment) * rate);
 		}
